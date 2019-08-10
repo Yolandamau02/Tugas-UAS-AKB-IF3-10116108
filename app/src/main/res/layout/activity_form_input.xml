@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@drawable/gradientbackground"
+    android:padding="40dp"
+    tools:context="com.example.viewpager.activities.FormInput">
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:visibility="gone"
+            android:paddingLeft="20dp"
+            android:textSize="20sp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/nimtext"
+            android:layout_width="match_parent"
+            android:textColorHint="#000"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/nim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_nim"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="@color/intro_title_color" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/namatext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000"
+            android:layout_marginTop="20dp" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_name"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/kelastext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000"
+            android:layout_marginTop="20dp" >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/kelas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_kelas"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/telptext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000"
+            android:layout_marginTop="20dp"
+            tools:ignore="DuplicateIds">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/telp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_telepon"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="#000" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/emailtext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#000"
+            android:layout_marginTop="20dp"
+            tools:ignore="DuplicateIds">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_email"
+                android:inputType="text"
+                android:maxLines="1"
+                android:textColor="#000" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/instagramtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#000"
+                android:layout_marginTop="20dp"
+                tools:ignore="DuplicateIds">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/instagram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_instagram"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="#000" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/colorText"
+            android:background="@color/colorTextHint"
+            android:text="@string/text_register" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.constraint.ConstraintLayout>
